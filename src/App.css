@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.container {
+    background: #edf1e8;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header {
+    width: calc(100vw - 320px);
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-text {
+    letter-spacing: 13px;
+    padding: 20px;
+    font-size: 3.2rem;
+    color: #383838;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dark-mode-btn {
+    width: 70px;
+    height: 70px;
+    border: 0;
+    position: absolute;
+    left: 93vw;
+    top: 0.5vh;
+    font-size: 0.6rem;
+    border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.dark-mode-btn:hover {
+    background: #dcdcdc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+    background: #003153;
+    color: white;
+    width: 320px;
+    height: 100vh;
+}
+
+/*.menu-list{*/
+/*  margin-top: 1px;*/
+/*}*/
+
+.menu-btn {
+    background: #003153;
+    border: 0;
+    color: white;
+    width: 320px;
+    height: 70px;
+    font-size: 1.3rem;
+}
+
+.hide-menu-btn {
+    background: #003153;
+    color: white;
+    border: 0;
+    width: 60px;
+    height: 55px;
+    padding: 0 20px;
+    margin: 0px 0px 0px 256px;
+}
+
+.hide-menu-icon {
+    transform: scale(1.8);
+    margin: 0px 0px -3px -1px;
+}
+
+.log-btn {
+    text-align: left;
+    width: 320px;
+    height: 100px;
+    font-size: 1.5rem;
+    background: #003153;
+    border: 0;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.person-icon {
+    transform: scale(1.8);
+    margin: 0px 25px -5px 25px;
+}
+
+.menu-btn:hover, .log-btn:hover, .hide-menu-btn:hover {
+    background: #284F6F;
 }
