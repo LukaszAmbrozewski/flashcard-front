@@ -1,0 +1,12 @@
+.menu-btn {
+    background: #003153;
+    border: 0;
+    color: white;
+    width: 320px;
+    height: 70px;
+    font-size: 1.3rem;
+}
+
+.menu-btn:hover {
+    background: #284F6F;
+}

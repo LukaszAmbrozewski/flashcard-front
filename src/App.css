@@ -37,57 +37,8 @@
     background: #dcdcdc;
 }
 
-.menu {
-    background: #003153;
-    color: white;
-    width: 320px;
-    height: 100vh;
-}
 
-/*.menu-list{*/
-/*  margin-top: 1px;*/
-/*}*/
 
-.menu-btn {
-    background: #003153;
-    border: 0;
-    color: white;
-    width: 320px;
-    height: 70px;
-    font-size: 1.3rem;
-}
 
-.hide-menu-btn {
-    background: #003153;
-    color: white;
-    border: 0;
-    width: 60px;
-    height: 55px;
-    padding: 0 20px;
-    margin: 0px 0px 0px 256px;
-}
 
-.hide-menu-icon {
-    transform: scale(1.8);
-    margin: 0px 0px -3px -1px;
-}
 
-.log-btn {
-    text-align: left;
-    width: 320px;
-    height: 100px;
-    font-size: 1.5rem;
-    background: #003153;
-    border: 0;
-    color: white;
-    letter-spacing: 2px;
-}
-
-.person-icon {
-    transform: scale(1.8);
-    margin: 0px 25px -5px 25px;
-}
-
-.menu-btn:hover, .log-btn:hover, .hide-menu-btn:hover {
-    background: #284F6F;
-}

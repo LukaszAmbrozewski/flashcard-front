@@ -1,0 +1,18 @@
+.hide-menu-btn {
+    background: #003153;
+    color: white;
+    border: 0;
+    width: 60px;
+    height: 55px;
+    padding: 0 20px;
+    margin: 0 0 0 256px;
+}
+
+.hide-menu-icon {
+    transform: scale(1.8);
+    margin: 0 0 -3px -1px;
+}
+
+.hide-menu-btn:hover {
+    background: #284F6F;
+}
