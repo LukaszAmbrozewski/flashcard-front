@@ -8,37 +8,4 @@
 }
 
 
-.header {
-    width: calc(100vw - 320px);
-    text-align: center;
-}
-
-.header-text {
-    letter-spacing: 13px;
-    padding: 20px;
-    font-size: 3.2rem;
-    color: #383838;
-    font-weight: 400;
-    text-shadow: #837d7d 0.03em 0.01em 0.02em;
-}
-
-.dark-mode-btn {
-    width: 70px;
-    height: 70px;
-    border: 0;
-    position: absolute;
-    left: 93vw;
-    top: 0.5vh;
-    font-size: 0.6rem;
-    border-radius: 50px;
-}
-
-.dark-mode-btn:hover {
-    background: #dcdcdc;
-}
-
-
-
-
-
 

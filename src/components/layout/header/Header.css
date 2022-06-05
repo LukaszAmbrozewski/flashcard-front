@@ -1,0 +1,14 @@
+.header {
+    width: calc(100vw - 320px);
+    height: 100px;
+    text-align: center;
+}
+
+.header-text {
+    letter-spacing: 13px;
+    padding: 20px;
+    font-size: 3.2rem;
+    color: #383838;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
+}
