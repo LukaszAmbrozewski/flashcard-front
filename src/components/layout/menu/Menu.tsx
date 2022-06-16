@@ -11,13 +11,7 @@ export const Menu = () => {
         <LogBtn/>
         <div className="menu-list">
             <HideMenuBtn/>
-            {/*<p>*/}
-            {/*    <button className="hide-menu-btn">*/}
-            {/*        <MenuIcon className="hide-menu-icon"/>*/}
-            {/*    </button>*/}
-            {/*</p>*/}
             <MenuBtn text="Rozpocznij naukę"/>
-            <MenuBtn text="Wybierz zakres nauki"/>
             <MenuBtn text="Dodaj nową kartę"/>
             <MenuBtn text="Przeglądaj karty"/>
             <MenuBtn text="Statystyki"/>

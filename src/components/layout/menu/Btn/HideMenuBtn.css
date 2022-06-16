@@ -11,6 +11,7 @@
 .hide-menu-icon {
     transform: scale(1.8);
     margin: 0 0 -3px -1px;
+    background: transparent;
 }
 
 .hide-menu-btn:hover {

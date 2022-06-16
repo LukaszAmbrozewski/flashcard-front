@@ -11,7 +11,10 @@
 
 .person-icon {
     transform: scale(1.8);
+    color: white;
     margin: 0 25px -5px 25px;
+    border-radius: 15px;
+    background: transparent;
 }
 
 .log-btn:hover {
