@@ -1,5 +1,5 @@
 import React, {SyntheticEvent, useState} from 'react';
-import {Btn} from '../common/Btn';
+import {Btn} from '../../../common/Btn';
 
 
 export const RegForm = () => {
@@ -13,7 +13,7 @@ export const RegForm = () => {
         e.preventDefault();
 
         //wysyłamy na be
-        const res = await fetch(`localhost:3001/ad`, {
+        const res = await fetch(`http://localhost:3001/api/user/registration`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -24,6 +24,7 @@ export const RegForm = () => {
         });
 
         const data = await res.json();
+        console.log(data)
 
     }
 
@@ -35,7 +36,7 @@ export const RegForm = () => {
     };
 
     return (
-        <form action="src/components/RegForm/RegForm" className="reg-form" onSubmit={addUser}>
+        <form action="src/components/views/Registration/RegForm/RegForm" className="reg-form" onSubmit={addUser}>
             <h1>Rejestracja użytkownika</h1>
             <p>
                 <label>
