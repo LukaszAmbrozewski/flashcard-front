@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+.header-mini {
+    width: calc(100vw - 60px);
+    height: 100px;
+    text-align: center;
+}
+
 .header-text {
     letter-spacing: 13px;
     padding: 20px;

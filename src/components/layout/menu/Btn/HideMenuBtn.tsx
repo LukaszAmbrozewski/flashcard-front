@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {MouseEventHandler} from 'react';
 import MenuIcon from "@mui/icons-material/Menu";
 
 import './HideMenuBtn.css'
 
-export const HideMenuBtn = () => {
+interface Props {
+    onClick: MouseEventHandler;
+    className: string;
+}
+
+export const HideMenuBtn = (props: Props) => {
     return (
-        <button className="hide-menu-btn">
+        <button className={props.className} onClick={props.onClick}>
             <MenuIcon className="hide-menu-icon"/>
         </button>
     )
