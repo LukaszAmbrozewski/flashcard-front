@@ -9,21 +9,7 @@ export const ListAll = () => {
     const ctx = useContext(myContext);
     const [data, setData] = useState<FlashcardEntity[]>([]);
 
-    console.log(ctx)
-
     useEffect(() => {
-        // axios.request({
-        //     method: 'get',
-        //     url: 'http://localhost:3001/api/flashcard/list',
-        //     data: 'test',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     withCredentials: true
-        // }).then((res: AxiosResponse) => {
-        //     setData(res.data)
-        // })
-
         Axios.get("http://localhost:3001/api/flashcard/list",
             {
                 withCredentials: true
@@ -35,15 +21,16 @@ export const ListAll = () => {
         return null;
     }
 
+    console.log(data)
 
     return (
         <>
-            <h1>List All</h1>
+            <h1>Lista dostępnych kart</h1>
             <table>
                 <thead>
                 <tr>
-                    <th>Przód</th>
-                    <th>Tył</th>
+                    <th>Przód karty</th>
+                    <th>Tył karty</th>
                     <th>Kategoria</th>
                 </tr>
                 </thead>
