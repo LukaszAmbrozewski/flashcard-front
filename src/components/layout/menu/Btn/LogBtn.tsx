@@ -9,13 +9,11 @@ import {Link} from "react-router-dom";
 
 export const LogBtn = () => {
     const ctx = useContext(myContext);
-    console.log(ctx)
 
     const logout = () => {
         Axios.get("http://localhost:3001/api/logout", {
             withCredentials: true
         }).then((res: AxiosResponse) => {
-            //Jeżeli udało się wylogować chcemy przekierować użytkownika na stronę główną window.location.href
             if (res.data === "success") {
                 window.location.href = "/"
             }

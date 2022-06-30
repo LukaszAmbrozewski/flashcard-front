@@ -6,7 +6,7 @@ import axios, {AxiosResponse} from "axios";
 export const Registration = () => {
     const [form, setForm] = useState({
         username: '',
-        password: 0,
+        password: '',
     });
 
     // const addUser = async (e: SyntheticEvent) => {
@@ -39,6 +39,8 @@ export const Registration = () => {
                 window.location.href = "/login"
             }
         });
+
+        console.log(form)
     }
 
     const updateForm = (key: string, value: any) => {

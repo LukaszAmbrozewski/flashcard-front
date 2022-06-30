@@ -1,5 +1,3 @@
-//AuthContext służy do udostępnienia globalnie stanu aplikacji. Dodajemy go dodatkowo do pliku index. My udostepniamy tutaj użytkownika żeby zalogowany użytkownik był dostepny w całej aplikacji.
-
 import React, {createContext, PropsWithChildren, useEffect, useState} from 'react';
 import Axios, {AxiosResponse} from "axios";
 import {UserInterface} from "types";
