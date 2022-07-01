@@ -1,0 +1,12 @@
+.added-box {
+    text-align: center;
+    margin: 60px;
+}
+
+.text {
+    letter-spacing: 8px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
+}

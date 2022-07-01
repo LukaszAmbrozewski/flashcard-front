@@ -11,7 +11,7 @@ import {Menu} from "./components/layout/menu/Menu";
 import {Header} from "./components/layout/header/Header";
 import {AddNewCard} from "./components/views/AddNewCard/AddNewCard";
 import {StyleContext} from "./contexts/style-context";
-import {AddedNewCard} from "./components/views/AddedNewCard";
+import {AddedNewCard} from "./components/views/AddedNewCard/AddedNewCard";
 import {LogError} from "./components/views/Error/LogError";
 import {myContext} from "./contexts/auth-context";
 
