@@ -40,7 +40,6 @@ export const Registration = () => {
             }
         });
 
-        console.log(form)
     }
 
     const updateForm = (key: string, value: any) => {
@@ -60,6 +59,7 @@ export const Registration = () => {
                         type="text"
                         name="username"
                         required
+                        minLength={5}
                         maxLength={50}
                         value={form.username}
                         onChange={e => updateForm('username', e.target.value)}
@@ -73,6 +73,7 @@ export const Registration = () => {
                         type="password"
                         name="password"
                         required
+                        minLength={5}
                         maxLength={30}
                         value={form.password}
                         onChange={e => updateForm('password', e.target.value)}

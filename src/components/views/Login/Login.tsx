@@ -16,8 +16,11 @@ export const Login = () => {
         }, {
             withCredentials: true
         }).then((res: AxiosResponse) => {
+            console.log(res.data)
             if (res.data === "success") {
                 window.location.href = "/learning"
+            } else {
+                window.location.href = "/logerror"
             }
         }, () => {
             console.log("Failure")
@@ -35,14 +38,14 @@ export const Login = () => {
     return (
         <>
             <form className="log-form" onSubmit={login}>
-                <h1>Zaloguj się by móc dodawać własne fiszki lub rozpocznij naukę z ogónodostepnych fiszek bez
+                <h1>Zaloguj się by móc dodawać własne fiszki lub rozpocznij naukę z ogólnodostępnych fiszek bez
                     konieczności
                     logowania.</h1>
                 <p>
                     <label>
                         Name: <br/>
                         <input
-                            type="username"
+                            type="text"
                             name="username"
                             required
                             maxLength={120}
@@ -69,7 +72,6 @@ export const Login = () => {
             <hr/>
             <h2>Nie posiadasz jeszcze konta</h2>
             <Btn text='Utwórz nowe konto' to='/registration'/>
-
         </>
     )
 }

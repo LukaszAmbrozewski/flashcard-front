@@ -21,8 +21,6 @@ export const ListAll = () => {
         return null;
     }
 
-    console.log(data)
-
     return (
         <>
             <h1>Lista dostępnych kart</h1>

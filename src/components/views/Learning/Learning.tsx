@@ -1,10 +1,8 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Axios, {AxiosResponse} from "axios";
-import {myContext} from "../../../contexts/auth-context";
 import {FlashcardEntity} from 'types'
 
 export const Learning = () => {
-    const ctx = useContext(myContext);
     const [flashcardObj, setFlashcardObj] = useState<FlashcardEntity[]>();
     const [one, setOne] = useState<string>();
 
@@ -30,8 +28,6 @@ export const Learning = () => {
     if (!flashcardObj) {
         return null;
     }
-
-    console.log(one)
 
     return (
         <>
