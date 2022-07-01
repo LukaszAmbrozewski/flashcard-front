@@ -1,0 +1,47 @@
+.learn-btn {
+    background: #003153;
+    color: white;
+    font-size: 1.3rem;
+    width: 180px;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px 15px 0 15px;
+    border-style: none;
+}
+
+.learn-btn:hover {
+    background: #284F6F;
+}
+
+.learn-box {
+    text-align: center;
+    margin: 60px;
+}
+
+.card-background {
+    width: 500px;
+    line-height: 240px;
+    background: #003153;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-flashcard {
+    word-wrap: break-word;
+    margin: 0 12px 0 12px;
+    padding: 94px 0 0 0;
+    font-size: 2rem;
+    line-height: 50px;
+    min-height: 240px;
+}
+
+.text {
+    letter-spacing: 8px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
+}

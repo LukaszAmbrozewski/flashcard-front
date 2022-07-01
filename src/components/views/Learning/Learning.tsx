@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import Axios, {AxiosResponse} from "axios";
 import {FlashcardEntity} from 'types'
 
+import './Learning.css'
+
 export const Learning = () => {
     const [flashcardObj, setFlashcardObj] = useState<FlashcardEntity[]>();
     const [one, setOne] = useState<string>();
@@ -30,12 +32,16 @@ export const Learning = () => {
     }
 
     return (
-        <>
-            <h1>Nauka</h1>
-            <p>{one}</p>
-            <button onClick={getOne}>Następna</button>
-            <button onClick={setBack}>Obróć</button>
-        </>
+        <div className='learn-box'>
+            <h1 className='text'>SEKCJA NAUKI</h1>
+            <div className='card-background'>
+                <div>
+                    <p className='text-flashcard'>{one}</p>
+                </div>
+            </div>
+            <button onClick={getOne} className="learn-btn">następna</button>
+            <button onClick={setBack} className="learn-btn">obróć</button>
+        </div>
     )
 }
 
