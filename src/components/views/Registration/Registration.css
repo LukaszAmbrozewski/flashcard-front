@@ -1,4 +1,4 @@
-.login-text {
+.registration-text {
     letter-spacing: 4px;
     padding: 20px;
     font-size: 2rem;
@@ -7,16 +7,12 @@
     text-align: center;
 }
 
-.login-box {
+.reg-box {
     text-align: center;
     margin: 60px;
 }
 
-.registration-box {
-    margin: 60px;
-}
-
-.input {
+.reg-input {
     border-radius: 20px;
     color: #151515;
     text-align: center;
