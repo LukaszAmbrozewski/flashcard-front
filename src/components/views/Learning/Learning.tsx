@@ -33,7 +33,7 @@ export const Learning = () => {
 
     return (
         <div className='learn-box'>
-            <h1 className='text'>SEKCJA NAUKI</h1>
+            <h1 className='learning-text'>SEKCJA NAUKI</h1>
             <div className='card-background'>
                 <div>
                     <p className='text-flashcard'>{one}</p>

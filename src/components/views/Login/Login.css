@@ -1,0 +1,36 @@
+.login-text {
+    letter-spacing: 4px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
+    text-align: center;
+}
+
+.login-box {
+    text-align: center;
+    margin: 60px;
+}
+
+.registration-box {
+    margin: 60px;
+}
+
+.input {
+    border-radius: 20px;
+    color: #837d7d;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
+    width: 300px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.input-box {
+    text-align: center;
+    font-weight: 400;
+    text-shadow: #837d7d 0.03em 0.01em 0.02em;
+    font-size: 1.5rem;
+    margin: 20px;
+}
