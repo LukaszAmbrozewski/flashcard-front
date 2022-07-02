@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Btn} from '../../common/Btn';
 import axios, {AxiosResponse} from "axios";
 
-import './Registration.css'
+import '../common-style.css'
 
 export const Registration = () => {
     const [form, setForm] = useState({
@@ -31,9 +31,9 @@ export const Registration = () => {
     };
 
     return (
-        <div className="reg-box">
+        <div className="box">
             <form className="reg-form" onSubmit={register}>
-                <h1 className='registration-text'>Rejestracja użytkownika</h1>
+                <h1 className='text'>Rejestracja użytkownika</h1>
                 <p className='input-box'>
                     <label>
                         Login: <br/>
@@ -45,7 +45,7 @@ export const Registration = () => {
                             maxLength={50}
                             value={form.username}
                             onChange={e => updateForm('username', e.target.value)}
-                            className='reg-input'
+                            className='input'
                             placeholder='Wpisz swój login'
                         />
                     </label>
@@ -61,7 +61,7 @@ export const Registration = () => {
                             maxLength={30}
                             value={form.password}
                             onChange={e => updateForm('password', e.target.value)}
-                            className='reg-input'
+                            className='input'
                             placeholder='Wpisz swoje hasło'
                         />
                     </label>

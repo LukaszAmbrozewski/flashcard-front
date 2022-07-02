@@ -3,6 +3,7 @@ import Axios, {AxiosResponse} from "axios";
 import {FlashcardEntity} from 'types'
 
 import './Learning.css'
+import '../common-style.css'
 
 export const Learning = () => {
     const [flashcardObj, setFlashcardObj] = useState<FlashcardEntity[]>();
@@ -32,8 +33,8 @@ export const Learning = () => {
     }
 
     return (
-        <div className='learn-box'>
-            <h1 className='learning-text'>SEKCJA NAUKI</h1>
+        <div className='box'>
+            <h1 className='text'>Sekcja nauki</h1>
             <div className='card-background'>
                 <div>
                     <p className='text-flashcard'>{one}</p>

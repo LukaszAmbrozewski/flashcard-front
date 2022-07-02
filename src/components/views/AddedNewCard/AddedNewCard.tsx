@@ -1,10 +1,11 @@
 import React from 'react';
 import {Btn} from "../../common/Btn";
-import './AddedNewCard.css'
+
+import '../common-style.css'
 
 export const AddedNewCard = () => {
     return (
-        <div className='added-box'>
+        <div className='box'>
             <h1 className='text'>Karta została dodana</h1>
             <p>
                 <Btn text='Dodaj kolejną kartę' to='/add'/>

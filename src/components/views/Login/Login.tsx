@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Btn} from '../../common/Btn';
 import axios, {AxiosResponse} from "axios";
 
-import './Login.css'
+import '../common-style.css'
 
 
 export const Login = () => {
@@ -39,9 +39,9 @@ export const Login = () => {
 
     return (
         <>
-            <div className='login-box'>
-                <form className="log-form" onSubmit={login}>
-                    <h1 className='login-text'>Zaloguj się, by móc dodawać własne fiszki lub rozpocznij naukę z
+            <div className='box'>
+                <form onSubmit={login}>
+                    <h1 className='text'>Zaloguj się, by móc dodawać własne fiszki lub rozpocznij naukę z
                         ogólnodostępnych fiszek bez
                         konieczności
                         logowania.</h1>
@@ -80,9 +80,9 @@ export const Login = () => {
                     <Btn text='Zaloguj'></Btn>
                 </form>
             </div>
-            <div className='registration-box'>
+            <div className='box'>
                 <hr/>
-                <h2 className='login-text'>Nie posiadasz jeszcze konta</h2>
+                <h2 className='text'>Nie posiadasz jeszcze konta</h2>
                 <Btn text='Utwórz nowe konto' to='/registration'/>
             </div>
         </>

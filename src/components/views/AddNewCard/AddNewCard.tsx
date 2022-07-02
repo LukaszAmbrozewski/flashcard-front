@@ -3,6 +3,8 @@ import {Btn} from "../../common/Btn";
 import {myContext} from "../../../contexts/auth-context";
 import axios, {AxiosResponse} from "axios";
 
+import '../common-style.css'
+
 export const AddNewCard = () => {
     const ctx = useContext(myContext);
     const [form, setForm] = useState({
@@ -42,10 +44,10 @@ export const AddNewCard = () => {
         <>
             {
                 ctx ? (
-                    <>
+                    <div className='box'>
                         <form className="add-form" onSubmit={add}>
-                            <h1>Dodawanie nowej prywatnej fiszki</h1>
-                            <p>
+                            <h1 className='text'>Dodawanie własnej fiszki</h1>
+                            <p className='input-box'>
                                 <label>
                                     Przód karty: <br/>
                                     <input
@@ -56,10 +58,12 @@ export const AddNewCard = () => {
                                         maxLength={50}
                                         value={form.front}
                                         onChange={e => updateForm('front', e.target.value)}
+                                        className='input'
+                                        placeholder='Wpisz przód karty'
                                     />
                                 </label>
                             </p>
-                            <p>
+                            <p className='input-box'>
                                 <label>
                                     Tył karty: <br/>
                                     <input
@@ -70,10 +74,12 @@ export const AddNewCard = () => {
                                         maxLength={50}
                                         value={form.back}
                                         onChange={e => updateForm('back', e.target.value)}
+                                        className='input'
+                                        placeholder='Wpisz tył karty'
                                     />
                                 </label>
                             </p>
-                            <p>
+                            <p className='input-box'>
                                 <label>
                                     Kategoria: <br/>
                                     <input
@@ -84,24 +90,25 @@ export const AddNewCard = () => {
                                         maxLength={50}
                                         value={form.category}
                                         onChange={e => updateForm('category', e.target.value)}
+                                        className='input'
+                                        placeholder='Wpisz kategorię'
                                     />
                                 </label>
                             </p>
                             <button type={"submit"}></button>
                             <Btn text='Dodaj nową kartę'></Btn>
                         </form>
-                    </>
+                    </div>
                 ) : (
-                    <>
-                        <h1>Zaloguj się by móc dodawać prywatne karty.</h1>
-                        <hr/>
+                    <div className='box'>
+                        <h1 className='text'>Zaloguj się, by móc dodawać własne fiszki.</h1>
                         <p>
                             <Btn text='Zaloguj się' to='/login'/>
                         </p>
                         <p>
                             <Btn text='Zarejestruj się' to='/registration'/>
                         </p>
-                    </>
+                    </div>
                 )
             }
         </>

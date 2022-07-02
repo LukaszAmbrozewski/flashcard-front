@@ -14,11 +14,6 @@
     background: #284F6F;
 }
 
-.learn-box {
-    text-align: center;
-    margin: 60px;
-}
-
 .card-background {
     width: 500px;
     line-height: 240px;
@@ -36,12 +31,4 @@
     font-size: 2rem;
     line-height: 50px;
     min-height: 240px;
-}
-
-.learning-text {
-    letter-spacing: 4px;
-    padding: 20px;
-    font-size: 2rem;
-    font-weight: 400;
-    text-shadow: #837d7d 0.03em 0.01em 0.02em;
 }
