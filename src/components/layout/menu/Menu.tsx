@@ -27,13 +27,15 @@ export const Menu = () => {
                     </>
                 ) : (
                     <div className="menu">
-                        <LogBtn/>
-                        <div className="menu-list">
-                            <HideMenuBtn className={'hide-menu-btn'} onClick={minMenu}/>
-                            <MenuBtn text="Rozpocznij naukę" to="/learning"/>
-                            <MenuBtn text="Dodaj nową kartę" to="/add"/>
-                            <MenuBtn text="Przeglądaj karty" to="/list"/>
-                            <MenuBtn text="Statystyki" to="/statistics"/>
+                        <div className="menu-scroll">
+                            <LogBtn/>
+                            <div className="menu-list">
+                                <HideMenuBtn className={'hide-menu-btn'} onClick={minMenu}/>
+                                <MenuBtn text="Rozpocznij naukę" to="/learning"/>
+                                <MenuBtn text="Dodaj nową kartę" to="/add"/>
+                                <MenuBtn text="Przeglądaj karty" to="/list"/>
+                                <MenuBtn text="Statystyki" to="/statistics"/>
+                            </div>
                         </div>
                     </div>
                 )

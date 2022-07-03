@@ -27,7 +27,7 @@ function App() {
                     hideMenu ? (
                         <div className="container">
                             <Menu/>
-                            <div>
+                            <div className='mini'>
                                 <Header className={'header-mini'}/>
                                 <Routes>
                                     <Route path="/registration" element={<Registration/>}/>
@@ -51,7 +51,7 @@ function App() {
                     ) : (
                         <div className="container">
                             <Menu/>
-                            <div>
+                            <div className='standard'>
                                 <Header className={'header'}/>
                                 <Routes>
                                     <Route path="/registration" element={<Registration/>}/>

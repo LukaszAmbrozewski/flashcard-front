@@ -2,6 +2,7 @@
     width: calc(100vw - 320px);
     height: 100px;
     text-align: center;
+    right: 0;
 }
 
 .header-mini {

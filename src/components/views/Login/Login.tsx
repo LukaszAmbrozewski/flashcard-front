@@ -38,10 +38,10 @@ export const Login = () => {
     };
 
     return (
-        <>
-            <div className='box'>
+        <div className='box'>
+            <div>
                 <form onSubmit={login}>
-                    <h1 className='text'>Zaloguj się, by móc dodawać własne fiszki lub rozpocznij naukę z
+                    <h1 className='text'>Zaloguj się, aby móc dodawać własne fiszki lub rozpocznij naukę z
                         ogólnodostępnych fiszek bez
                         konieczności
                         logowania.</h1>
@@ -82,10 +82,10 @@ export const Login = () => {
             </div>
             <div className='box'>
                 <hr/>
-                <h2 className='text'>Nie posiadasz jeszcze konta</h2>
+                <h2 className='text'>Nie posiadasz jeszcze konta?</h2>
                 <Btn text='Utwórz nowe konto' to='/registration'/>
             </div>
-        </>
+        </div>
     )
 }
 

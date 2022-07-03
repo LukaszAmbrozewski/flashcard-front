@@ -1,9 +1,16 @@
 .menu {
-    background: #003153;
     color: white;
     width: 320px;
-    height: 100vh;
+    background: #003153;
 }
+
+.menu-scroll {
+    position: fixed;
+    height: 100vh;
+    background: #003153;
+    width: 320px;
+}
+
 
 .mini-menu {
     background: #003153;
@@ -11,4 +18,12 @@
     width: 320px;
     height: 100vh;
     margin: 0;
+}
+
+
+.mini-menu-scroll {
+    position: fixed;
+    height: 100vh;
+    background: #003153;
+    width: 320px;
 }

@@ -1,0 +1,18 @@
+tr, td, th {
+    border: 1px solid #c4b9b9;
+    height: 50px;
+}
+
+thead {
+    font-weight: bold;
+    background: #284F6F;
+    color: white;
+}
+
+table {
+    width: 100%;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    border-collapse: collapse;
+
+}

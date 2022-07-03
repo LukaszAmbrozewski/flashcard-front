@@ -95,13 +95,12 @@ export const AddNewCard = () => {
                                     />
                                 </label>
                             </p>
-                            <button type={"submit"}></button>
                             <Btn text='Dodaj nową kartę'></Btn>
                         </form>
                     </div>
                 ) : (
                     <div className='box'>
-                        <h1 className='text'>Zaloguj się, by móc dodawać własne fiszki.</h1>
+                        <h1 className='text'>Zaloguj się, aby móc dodawać własne fiszki.</h1>
                         <p>
                             <Btn text='Zaloguj się' to='/login'/>
                         </p>

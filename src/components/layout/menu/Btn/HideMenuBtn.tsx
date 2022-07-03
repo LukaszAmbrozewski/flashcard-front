@@ -10,8 +10,10 @@ interface Props {
 
 export const HideMenuBtn = (props: Props) => {
     return (
-        <button className={props.className} onClick={props.onClick}>
-            <MenuIcon className="hide-menu-icon"/>
-        </button>
+        <div className="background-hide-menu-btn">
+            <button className={props.className} onClick={props.onClick}>
+                <MenuIcon className="hide-menu-icon"/>
+            </button>
+        </div>
     )
 }

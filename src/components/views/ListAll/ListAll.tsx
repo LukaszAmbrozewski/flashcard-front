@@ -3,7 +3,9 @@ import {myContext} from "../../../contexts/auth-context";
 
 import {FlashcardEntity} from 'types'
 import Axios, {AxiosResponse} from "axios";
-// import axios from "axios";
+
+import '../common-style.css'
+import './ListAll.css'
 
 export const ListAll = () => {
     const ctx = useContext(myContext);
@@ -22,9 +24,9 @@ export const ListAll = () => {
     }
 
     return (
-        <>
-            <h1>Lista dostępnych kart</h1>
-            <table>
+        <div className='box'>
+            <h1 className='text'>Lista dostępnych kart</h1>
+            <table className='table'>
                 <thead>
                 <tr>
                     <th>Przód karty</th>
@@ -45,6 +47,6 @@ export const ListAll = () => {
                     );
                 })}
             </table>
-        </>
+        </div>
     )
 }

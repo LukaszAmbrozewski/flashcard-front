@@ -12,7 +12,6 @@
     background: white;
     color: #003153;
     margin: 0;
-    border-radius: 3px;
 }
 
 .hide-menu-icon {
@@ -27,4 +26,10 @@
 
 .small-hide-menu-btn:hover {
     background: #dcdcdc;
+}
+
+.background-hide-menu-btn {
+    background: #003153;
+    height: 55px;
+    width: 320px;
 }
