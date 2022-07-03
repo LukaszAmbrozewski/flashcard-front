@@ -1,0 +1,14 @@
+.dark-mode-btn {
+    width: 70px;
+    height: 70px;
+    border: 0;
+    position: absolute;
+    left: 93vw;
+    top: 0.5vh;
+    font-size: 0.65rem;
+    border-radius: 50px;
+}
+
+.dark-mode-btn:hover {
+    background: #dcdcdc;
+}

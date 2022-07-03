@@ -1,0 +1,28 @@
+.log-btn {
+    background: #003153;
+    color: white;
+    width: 320px;
+    text-align: left;
+    line-height: 100px;
+    font-size: 1.5rem;
+    border: 0;
+    letter-spacing: 2px;
+    display: block;
+    text-decoration: none;
+}
+
+.log-btn-smaller {
+    font-size: 1rem;
+}
+
+.person-icon {
+    transform: scale(1.8);
+    color: white;
+    margin: 0 25px -5px 25px;
+    border-radius: 15px;
+    background: transparent;
+}
+
+.log-btn:hover {
+    background: #284F6F;
+}

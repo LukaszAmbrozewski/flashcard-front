@@ -1,0 +1,34 @@
+.learn-btn {
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px 15px 0 15px;
+    font-size: 1.3rem;
+    width: 220px;
+    line-height: 40px;
+    background: #003153;
+    border: 0;
+}
+
+.learn-btn:hover {
+    background: #284F6F;
+}
+
+.card-background {
+    width: 500px;
+    line-height: 240px;
+    background: #003153;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-flashcard {
+    word-wrap: break-word;
+    margin: 0 12px 0 12px;
+    padding: 94px 0 0 0;
+    font-size: 2rem;
+    line-height: 50px;
+    min-height: 240px;
+}
