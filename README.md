@@ -21,7 +21,7 @@ Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fi
 - funckjonalność zapisywania postępów użytkownika,
 - funkcjonalność wybierania kategorii kart których chcemy się aktualnie uczyć,  
 
-## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego, jeżli oczywiście się do niego dostanę ;) 
+## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego, jeżeli oczywiście się do niego dostanę ;) 
 
 Pozdrawiam,
 Łukasz Ambrożewski
