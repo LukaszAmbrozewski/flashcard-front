@@ -4,12 +4,24 @@ Aplikacja w fazie rozwojowej. Z powodu ograniczonego czasu i konieczności przek
 
 ## Cel aplikacji:
 
-Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na dodawanie własnych kart oraz korzystanie z gotowych zbiorów kart. Dzięki funkcjonalności dodawania użytkowników oraz logowania każdy użytkownik ma dostęp do własnych kart. Każdy użytkownik może również korzystać z ogólnodostępnych kart bez logowania. Sekcja nauki wybiera losowo 
+Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fiszek oraz korzystanie z gotowych zbiorów fiszek. Dzięki funkcjonalności dodawania użytkowników oraz logowania każdy użytkownik ma dostęp do własnych fiszek. Każdy użytkownik może również korzystać z ogólnodostępnych fiszek bez logowania. Sekcja nauki wybiera losowo fiszkę i pozwala wyswietlić treść jej odwrotu. 
 
-### Problemy i niezrealizowane założenia pierwszej wersji aplikacji:
+## Problemy pierwszej wersji aplikacji:
 
-- zdarzają się czasowe problemy z zalogowaniem do aplikacji,
+- zdarzają się czasowe problemy z zalogowaniem do aplikacji i z późniejszym przekierowaniem do innych sekcji po zalogowaniu lub rejestracji,
 - słaba walidacja danych,
 - brak testów,
 - brak responsywności strony,
-- nie ukończona została sekcja statystyki, panel administratora, funkcjonalności edycji i usuwania kart, oraz zapisywania postępów użytkownika,
+
+## Niezrealizowane założenia pierwszej wersji aplikacji:
+
+- sekcja statystyki, 
+- panel administratora, 
+- funkcjonalność edycji i usuwania kart, 
+- funckjonalność zapisywania postępów użytkownika,
+- funkcjonalność wybierania kategorii kart których chcemy się aktualnie uczyć,  
+
+## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego, jeżli oczywiście się do niego dostanę ;) 
+
+Pozdrawiam,
+Łukasz Ambrożewski
