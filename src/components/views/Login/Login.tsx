@@ -3,6 +3,7 @@ import {Btn} from '../../common/Btn';
 import axios, {AxiosResponse} from "axios";
 
 import '../common-style.css'
+import {apiUrl} from "../../../config/api";
 
 
 export const Login = () => {
@@ -13,7 +14,7 @@ export const Login = () => {
 
 
     const login = () => {
-        axios.post("http://localhost:3001/api/login", {
+        axios.post(`${apiUrl}/login`, {
             ...form,
         }, {
             withCredentials: true

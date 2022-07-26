@@ -4,6 +4,7 @@ import {myContext} from "../../../contexts/auth-context";
 import axios, {AxiosResponse} from "axios";
 
 import '../common-style.css'
+import {apiUrl} from "../../../config/api";
 
 export const AddNewCard = () => {
     const ctx = useContext(myContext);
@@ -16,7 +17,7 @@ export const AddNewCard = () => {
     const add = () => {
         const userId = ctx.id;
 
-        axios.post("http://localhost:3001/api/flashcard/add", {
+        axios.post(`${apiUrl}/flashcard/add`, {
             ...form,
             userId: userId,
         }, {

@@ -5,13 +5,14 @@ import Axios, {AxiosResponse} from "axios";
 
 import './LogBtn.css'
 import {Link} from "react-router-dom";
+import {apiUrl} from "../../../../config/api";
 
 
 export const LogBtn = () => {
     const ctx = useContext(myContext);
 
     const logout = () => {
-        Axios.get("http://localhost:3001/api/logout", {
+        Axios.get(`${apiUrl}/logout`, {
             withCredentials: true
         }).then((res: AxiosResponse) => {
             if (res.data === "success") {

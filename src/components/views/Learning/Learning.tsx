@@ -4,13 +4,14 @@ import {FlashcardEntity} from 'types'
 
 import './Learning.css'
 import '../common-style.css'
+import {apiUrl} from "../../../config/api";
 
 export const Learning = () => {
     const [flashcardObj, setFlashcardObj] = useState<FlashcardEntity[]>();
     const [one, setOne] = useState<string>();
 
     const getOne = () => {
-        Axios.get("http://localhost:3001/api/flashcard/one",
+        Axios.get(`${apiUrl}/flashcard/one`,
             {
                 withCredentials: true
             }).then((res: AxiosResponse) => {

@@ -6,13 +6,14 @@ import Axios, {AxiosResponse} from "axios";
 
 import '../common-style.css'
 import './ListAll.css'
+import {apiUrl} from "../../../config/api";
 
 export const ListAll = () => {
     const ctx = useContext(myContext);
     const [data, setData] = useState<FlashcardEntity[]>([]);
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/api/flashcard/list",
+        Axios.get(`${apiUrl}/flashcard/list`,
             {
                 withCredentials: true
             }).then((res: AxiosResponse) => {

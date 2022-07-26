@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Btn} from '../../common/Btn';
 import axios, {AxiosResponse} from "axios";
 
-import '../common-style.css'
+import {apiUrl} from "../../../config/api";
 
 export const Registration = () => {
     const [form, setForm] = useState({
@@ -11,7 +11,7 @@ export const Registration = () => {
     });
 
     const register = () => {
-        axios.post("http://localhost:3001/api/register", {
+        axios.post(`${apiUrl}/register`, {
             ...form
         }, {
             withCredentials: true
