@@ -1,5 +1,8 @@
+body {
+    background: white;
+}
+
 .container {
-    background: #edf1e8;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,5 +18,5 @@
 
 .mini {
     width: 100vw;
-    margin-left: 0;
+    padding-left: -30px;
 }
