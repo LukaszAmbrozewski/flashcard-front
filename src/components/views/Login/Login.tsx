@@ -1,33 +1,66 @@
 import React, {useState} from 'react';
 import {Btn} from '../../common/Btn';
-import axios, {AxiosResponse} from "axios";
+import jwtDecode from 'jwt-decode';
+import { setAccessToken, setExpirationTime, setId, setRole } from '../../../redux-toolkit/features/user/user-slice';
+import '../../styles/stylesForForms.css';
+import { useDispatch, useSelector } from 'react-redux';
 
 import '../common-style.css'
 import {apiUrl} from "../../../config/api";
 
+interface FormValues {
+    loginEmail: string;
+    loginPassword: string;
+}
+
+interface AccessToken {
+    name: string;
+    exp: number;
+}
 
 export const Login = () => {
     const [form, setForm] = useState({
-        username: '',
+        email: '',
         password: '',
     });
 
+    const [openModal, setOpenModal] = useState(false);
+    const handleClose = () => {
+        setOpenModal(false);
+    };
+    const [feedbackError, setFeedbackError] = useState('');
+    const [feedbackSuccess, setFeedbackSuccess] = useState('');
 
-    const login = () => {
-        axios.post(`${apiUrl}/login`, {
-            ...form,
-        }, {
-            withCredentials: true
-        }).then((res: AxiosResponse) => {
-            console.log(res.data)
-            if (res.data === "success") {
-                window.location.href = "/learning"
-            } else {
-                window.location.href = "/logerror"
+    const dispatch = useDispatch();
+
+    const submitForm = async () => {
+        try {
+            const res = await fetch(`${apiUrl}/login`, {
+                method: 'POST',
+                credentials: 'include',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    ...form,
+                }),
+            });
+            const result = await res.json();
+            if (result.accessToken) {
+                const decoded = jwtDecode<AccessToken>(result.accessToken);
+                dispatch(setId(result.id));
+                dispatch(setAccessToken(result.accessToken));
+                dispatch(setExpirationTime(decoded.exp));
+                dispatch(setRole(result.role));
             }
-        }, () => {
-            console.log("Failure")
-        });
+            setOpenModal(true);
+            setFeedbackSuccess(result);
+            setFeedbackError(result.message);
+
+        } catch (err) {
+            console.log(err);
+        }
     }
 
 
@@ -41,7 +74,7 @@ export const Login = () => {
     return (
         <div className='box'>
             <div>
-                <form onSubmit={login}>
+                <form onSubmit={submitForm}>
                     <h1 className='text'>Zaloguj się, aby móc dodawać własne fiszki lub rozpocznij naukę z
                         ogólnodostępnych fiszek bez
                         konieczności
@@ -49,16 +82,16 @@ export const Login = () => {
                     <div>
                         <p className='input-box'>
                             <label>
-                                Login: <br/>
+                                Email: <br/>
                                 <input
                                     type="text"
-                                    name="username"
+                                    name="email"
                                     required
                                     maxLength={120}
-                                    value={form.username}
-                                    onChange={e => updateForm('username', e.target.value)}
+                                    value={form.email}
+                                    onChange={e => updateForm('email', e.target.value)}
                                     className='input'
-                                    placeholder='Wpisz swój login'
+                                    placeholder='Wpisz swój email'
                                 />
                             </label>
                         </p>
@@ -89,4 +122,3 @@ export const Login = () => {
         </div>
     )
 }
-
