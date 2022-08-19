@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import LogoutIcon from '@mui/icons-material/Logout';
 import {myContext} from '../../../../contexts/auth-context';
 import Axios, {AxiosResponse} from "axios";
-
 import './LogBtn.css'
 import {Link} from "react-router-dom";
 import {apiUrl} from "../../../../config/api";
@@ -21,24 +21,31 @@ export const LogBtn = () => {
         })
     }
 
-
     return (
         <>
             {
                 ctx ? (
-                    <div>
-                        <Link className="log-btn log-btn-smaller" onClick={logout} to="/login">
+                    <Link className='log-btn' onClick={logout} to="/login">
+                        <div className="icon-box">
                             <AccountCircleIcon className="person-icon"/>
-                            Wyloguj: {ctx.username}
-                        </Link>
-                    </div>
+                        </div>
+                        <div className='logged-box'>
+                            <div className='user-text'>{ctx.username}</div>
+                            <div className='log-text logout-text'>
+                                Wyloguj
+                                <LogoutIcon className='icon-logout'/>
+                            </div>
+                        </div>
+                    </Link>
                 ) : (
-                    <>
-                        <Link className="log-btn" to="/login">
+                    <Link className="log-btn" to="/login">
+                        <div className="icon-box">
                             <AccountCircleIcon className="person-icon"/>
+                        </div>
+                        <div className="log-text">
                             Logowanie
-                        </Link>
-                    </>
+                        </div>
+                    </Link>
                 )
             }
         </>
