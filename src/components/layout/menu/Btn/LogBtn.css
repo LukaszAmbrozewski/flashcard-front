@@ -2,27 +2,75 @@
     background: #003153;
     color: white;
     width: 320px;
-    text-align: left;
-    line-height: 100px;
-    font-size: 1.5rem;
-    border: 0;
-    letter-spacing: 2px;
-    display: block;
+    min-height: 100px;
     text-decoration: none;
-}
-
-.log-btn-smaller {
-    font-size: 1rem;
-}
-
-.person-icon {
-    transform: scale(1.8);
-    color: white;
-    margin: 0 25px -5px 25px;
-    border-radius: 15px;
-    background: transparent;
+    display: flex;
+    justify-content: space-between;
 }
 
 .log-btn:hover {
     background: #284F6F;
 }
+
+.person-icon {
+    transform: scale(1.8);
+    color: white;
+    border-radius: 15px;
+    background: transparent;
+}
+
+.log-text {
+    font-size: 1.5rem;
+    border: 0;
+    letter-spacing: 2px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 240px;
+}
+
+.logout-text {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box {
+    min-width: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logged-box {
+    display: flex;
+    max-height: 100px;
+    min-height: 60px;
+    min-width: 240px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.user-text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon-logout {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2);
+    color: white;
+    background: transparent;
+    padding-left: 10px;
+}
+
