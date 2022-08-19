@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import LogoutIcon from '@mui/icons-material/Logout';
 import {myContext} from '../../../../contexts/auth-context';
 import Axios, {AxiosResponse} from "axios";
 import './LogBtn.css'
@@ -25,18 +24,14 @@ export const LogBtn = () => {
         <>
             {
                 ctx ? (
-                    <Link className='log-btn' onClick={logout} to="/login">
+                    <div className='log-btn log-box'>
                         <div className="icon-box">
                             <AccountCircleIcon className="person-icon"/>
                         </div>
                         <div className='logged-box'>
-                            <div className='user-text'>{ctx.username}</div>
-                            <div className='log-text logout-text'>
-                                Wyloguj
-                                <LogoutIcon className='icon-logout'/>
-                            </div>
+                            {ctx.username}
                         </div>
-                    </Link>
+                    </div>
                 ) : (
                     <Link className="log-btn" to="/login">
                         <div className="icon-box">
