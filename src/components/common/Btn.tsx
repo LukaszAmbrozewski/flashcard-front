@@ -12,7 +12,7 @@ interface Props {
 export const Btn = (props: Props) => (
     props.to
         ? <Link className="btn" to={props.to} onClick={props.onClick}>{props.text}</Link>
-        : <button className="btn">{props.text}</button>
+        : <button className="btn" onClick={props.onClick}>{props.text}</button>
 );
 
 
