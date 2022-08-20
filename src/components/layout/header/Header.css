@@ -1,14 +1,16 @@
 .header {
     width: calc(100vw - 320px);
-    height: 100px;
-    text-align: center;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-mini {
     width: calc(100vw - 60px);
     height: 100px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-text {

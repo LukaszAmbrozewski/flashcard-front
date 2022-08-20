@@ -14,6 +14,7 @@ import {StyleContext} from "./contexts/style-context";
 import {AddedNewCard} from "./components/views/AddedNewCard/AddedNewCard";
 import {LogError} from "./components/views/Error/LogError";
 import {myContext} from "./contexts/auth-context";
+import {RegError} from "./components/views/Error/RegError";
 
 
 function App() {
@@ -61,7 +62,8 @@ function App() {
                                     <Route path="/statistics" element={<Statistics/>}/>
                                     <Route path="/add" element={<AddNewCard/>}/>
                                     <Route path="/added" element={<AddedNewCard/>}/>
-                                    <Route path="/logerror" element={<LogError/>}/>
+                                    <Route path="/log-error" element={<LogError/>}/>
+                                    <Route path="/reg-error" element={<RegError/>}/>
                                     <Route path="/" element={
                                         ctx ? (
                                             <Learning/>
