@@ -6,8 +6,8 @@ export const RegError = () => {
     return (
         <div className='box'>
 
-            <h1 className='text'>Podano niepoprawne dane do rejestracji lub użytkownik o takiej nazwie istnieje już w
-                bazie. Spróbuj ponownie lub kontynuuj naukę bez konta.</h1>
+            <h1 className='text'>Użytkownik o takiej nazwie istnieje już w bazie. Spróbuj ponownie wykorzystując inną
+                nazwę użytkownika.</h1>
             <p>
                 <Btn text='Rejestracja' to='/registration'/>
             </p>
